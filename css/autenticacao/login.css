@@ -1,0 +1,100 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Amaranth', sans-serif;
+}
+body {
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.container img{
+    height: 100vh;
+}
+
+.inputs{
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    height: 100vh;
+    width: 600px;
+    right: 0;
+}
+
+.inputs input{
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    padding: 7px;
+    margin-left: 80px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.inputs label{
+    margin-left: 80px;
+    margin-top: 40px;
+    color: darkgray;
+}
+
+.botao{
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 80px;
+    padding: 10px;
+    width: 418px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: darkgreen;
+}
+
+.corCinza{
+    color: darkgrey;
+}
+
+.corCinza label{
+    font-size: 25px;
+    position: relative;
+    top: 18px;
+}
+
+.botaoCadastro{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    padding: 10px;
+    width: 418px;
+    border-radius: 8px;
+    margin-left: 80px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.estilo hr{
+    width: 418px;
+    margin-left: 80px;
+    margin-top: 2.5em;
+    border: 0.5px solid lightgray;
+}
+.botaoCadastro:hover {
+    background-color: green;
+    color: white;
+}
+
+.divTitulo {
+    margin-top: 200px;
+    margin-left: 80px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
