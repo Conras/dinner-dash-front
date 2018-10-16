@@ -1,0 +1,102 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+.linha1{
+    background-image: url(/home/conrado/PT2018/Github/dinner-dash-20182-front/imagens/helloquence-61189.jpg);
+    height: 50%;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.linha2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.tabela {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+.tabela th{
+    background-color:lightgray;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 420px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.tabela td{
+    border-top: 1px solid #DEE2E6;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.divTabela {
+    margin-top: 30px;
+}
+.vermelho {
+    color: red;
+}
+
+.amarelo{
+    color: rgb(255, 255, 0);
+}
+.menu button{
+    border: none;
+    background: none;
+    color: lightgray;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    background-color: rgb(56, 66, 66);
+    text-align: left;
+    width: 100%;
+    color: lightgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 85px;
+}
+
+.menu span{
+    margin-left: 40px;
+}
+
+.menu button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    background-color: lightgray;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.divRodape span{
+    text-align: right;
+    margin-left: 10em;
+    margin-right: 55em;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

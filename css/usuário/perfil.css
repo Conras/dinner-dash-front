@@ -1,19 +1,24 @@
 * {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 h1 {
     font-family: 'Amaranth', sans-serif;
 }
-body {
-    margin: 0;
-}
+
 .container{
     display: flex;
     flex-direction: row;
     justify-content: left;
+    width: 100%;
+    height: 100vh;
 }
-.container img{
+.imagem{
+    background-image: url(/home/conrado/PT2018/Github/dinner-dash-20182-front/imagens/sabri-tuzcu-365440.jpg);
+    background-size: cover;
+    width: 70%;
     height: 100vh;
 }
 
@@ -22,24 +27,24 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: flex-start;
-    position: absolute;
     height: 100vh;
-    width: 600px;
-    right: 0;
+    width: 30%;
 }
 
 .inputs input{
     border: 1px solid darkgray;
     border-radius: 4px;
-    padding: 7px;
-    margin-left: 80px;
-    width: 400px;
-    margin-top: 10px;
+    padding: 0.4em;
+    width: 80%;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 0.5em;
 }
 
 .inputs label{
-    margin-left: 80px;
-    margin-top: 40px;
+    width: 80%;
+    margin-left: 3em;
+    margin-right: 3em;
     color: darkgray;
 }
 
@@ -48,9 +53,11 @@ body {
     color: white;
     text-align: center;
     border-radius: 8px;
-    margin-left: 80px;
-    padding: 10px;
-    width: 418px;
+    padding: 0.7em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 1em;
+    width: 80%;
     border: 1px solid;
     cursor: pointer;
 }
@@ -58,15 +65,14 @@ body {
 .botao:hover{
     background-color: darkgreen;
 }
-
 .corCinza{
-    color: darkgrey;
+    width: 100%;
 }
-
-.corCinza label{
-    font-size: 25px;
-    position: relative;
-    top: 18px;
+.corCinza h1{
+    color: darkgray;
+    width: 80%;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 .botaoLogin{
@@ -74,15 +80,21 @@ body {
     border: 1px solid green;
     color: green;
     padding: 10px;
-    width: 418px;
+    width: 80%;
     border-radius: 8px;
-    margin-left: 80px;
-    margin-top: 40px;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 10%;
     cursor: pointer;
 }
+.estilo{
+    width: 100%;
+}
 .estilo hr{
-    width: 418px;
-    margin-left: 80px;
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 80%;
     margin-top: 2.5em;
     border: 0.5px solid lightgray;
 }
@@ -92,8 +104,43 @@ body {
 }
 
 .divTitulo {
-    margin-top: 100px;
-    margin-left: 80px;
+    margin-top: 4em;
+    width: 70%;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+    .imagem {
+        display: none;
+    }
+    .inputs {
+        height: 100%;
+        width: 100%;
+    }
+    .divTitulo {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .corCinza h1{
+        font-size: 20px;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1030px){
+    .divTitulo {
+        font-size: 20px;
+    }
+
+    .corCinza h1{
+        font-size: 20px;
+    }
+    .inputs {
+        width: 100%;    
+    }
 }
