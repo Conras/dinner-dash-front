@@ -4,76 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/home/conrado/PT2018/Github/dinner-dash-20182-front/css/autenticacao/normalize.css">
-    <link rel="stylesheet" href="/home/conrado/PT2018/Github/dinner-dash-20182-front/css/backoffice/categorias.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/backoffice/categorias.css">
     <title>Backoffice</title>
 </head>
 <body>
-    <div class="container">
-        <div class="linha1">
-            <div class="menu">
-                <span> <button>Pedidos</button></span>
-                <span> <button>Usuários</button></span>
-                <span> <button>Refeições</button> </span>
-                <span> <button>Categorias de Refeição</button></span>
+        <div class="imagem">
+                        <div class="top_navbar container d-flex">
+                                <div class="mr-auto p-2"><a class="text-light font-weight-bold logo" href="#">Dinnerdash</a></div>
+                                <div class="p-2"><a class="text-warning current font-weight-bold" href="#">backoffice</a></div>
+                                <div class="p-2"><a class="text-light font-weight-bold" href="#">perfil</a></div>
+                                <div class="p-2"><a class="text-light font-weight-bold" href="#">sair</a></div>
+                        </div>
+
+            <div class="container texto">
+                <h1 class="text-light">BackOffice</h1>
+                <p class="text-light">Gerencie pedidos, refeições e mais</p>
             </div>
         </div>
-        <div class="linha2">
-            <div class="divTabela">
-                    <table class="tabela">
-                            <thead>
-                                <th>Nome</th>
-                                <th>Número de refeições</th>
-                                <th colspan="3">Cadastrada em</th>
-                            </thead>
-                            <tbody>
-                                <tr class="corpo">
-                                    <td>Saladas</td>
-                                    <td>4</td>
-                                    <td>20/10/2017</td>
-                                    <td class="amarelo">editar</td>
-                                    <td class="vermelho">excluir</td>
-                                </tr>
-                                <tr>
-                                    <td>Molhos</td>
-                                    <td>4</td>
-                                    <td>20/10/2017</td>
-                                    <td class="amarelo">editar</td>
-                                    <td class="vermelho">excluir</td>
-                                </tr>
-                                <tr class="corpo">
-                                    <td>Saladas</td>
-                                    <td>4</td>
-                                    <td>20/10/2017</td>
-                                    <td class="amarelo">editar</td>
-                                    <td class="vermelho">excluir</td>
-                                </tr>
-                                <tr class="corpo">
-                                    <td>Saladas</td>
-                                    <td>4</td>
-                                    <td>20/10/2017</td>
-                                    <td class="amarelo">editar</td>
-                                    <td class="vermelho">excluir</td>
-                                </tr>
-                                <tr class="corpo">
-                                    <td>Saladas</td>
-                                    <td>4</td>
-                                    <td>20/10/2017</td>
-                                    <td class="amarelo">editar</td>
-                                    <td class="vermelho">excluir</td>
-                                </tr>
-                            </tbody>
-                        </table>
-            </div>
-        </div>
-        <div class="rodape">
-            <div class="divRodape">
-                <span>dinnerdash | todos os direitos reservados</span>
-            </div>
-            <div>
-                <span>desenvolvido por Conrado Nunes</span> 
-            </div>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse margem" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#"> Pedidos <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Usuários</a>
+                    <a class="nav-item nav-link" href="#">Refeições</a>
+                    <a class="nav-item nav-link" href="#">Categorias de Refeição</a>
+                  </div>
+                </div>
+        </nav>
+                <table class="table container-fluid table-hover tabela">
+                        <thead class="table-active">
+                            <tr class="cabecalho">
+                                    <th scope="col">Pedido de Nº</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Data</th>
+                                    <th scope="col">Usuário</th>
+                                    <th scope="col">Preço Total</th>
+                                    <th scope="col" colspan="3">Detalhes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-muted">
+                                <tr class='corpo'>
+                                        <td>103849</th>
+                                        <td>
+                                            <div class="entregue">entregue</div>
+                                        </td>
+                                        <td>29/11/2018</td>
+                                        <td>Nicholas</td>
+                                        <td>R$ 103,50</td>
+                                        <td class="text-info"><a href="#" class="text-info"> ver itens do pedido</a></td>
+                                        <td class="text-warning"><a href="#" class="text-warning">editar</a></td>
+                                        <td class="text-danger"><a href="#" class="text-danger">excluir</a></td>
+                                 </tr>
+                                 <tr class="corpo">
+                                        <td>103850</td>
+                                        <td>
+                                            <div class="pendente">pendente</div>
+                                        </td>
+                                        <td>30/11/2018</td>
+                                        <td>Nicholas</td>
+                                        <td>R$ 133,55</td>
+                                        <td class="text-info"><a href="#" class="text-info"> ver itens do pedido</a></td>
+                                        <td class="text-warning"><a href="#" class="text-warning">editar</a></td>
+                                        <td class="text-danger"><a href="#" class="text-danger">excluir</a></td>
+                                 </tr>
+                                 <tr class="corpo">
+                                        <td>103851</td>
+                                        <td>
+                                            <div class="cancelado">cancelado</div>
+                                        </td>
+                                        <td>31/11/2018</td>
+                                        <td>Nicholas</td>
+                                        <td>R$ 253,60</td>
+                                        <td class="text-info"><a href="#" class="text-info"> ver itens do pedido</a></td>
+                                        <td class="text-warning"><a href="#" class="text-warning">editar</a></td>
+                                        <td class="text-danger"><a href="#" class="text-danger">excluir</a></td>
+                                 </tr>
+                                 <tr class="corpo">
+                                        <td class="padding">103852</td>
+                                        <td>
+                                            <div class="entregue">entregue</div>
+                                        </td>
+                                        <td>01/12/2018</td>
+                                        <td>Nicholas</td>
+                                        <td>R$ 10,40</td>
+                                        <td class="text-info"><a href="#" class="text-info"> ver itens do pedido</a></td>
+                                        <td class="text-warning"><a href="#" class="text-warning">editar</a></td>
+                                        <td class="text-danger"><a href="#" class="text-danger">excluir</a></td>
+                                 </tr>
+                        </tbody>
+                </table>
+<footer class="footer fixed-bottom">
+    <div class="minhaDiv text-center">
+        <span>dinnerdash | todos os direitos reservados</span>
+        <span>desenvolvido por Conrado N.</span>
     </div>
+</footer>  
 </body>
 </html>
